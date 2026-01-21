@@ -1,6 +1,6 @@
-site_name: Package Name
-repo_url: https://github.com/USERNAME/REPO
-repo_name: Name on the tab
+site_name: PyWrappers
+repo_url: https://github.com/Jtachan/PyWrappers
+repo_name: Python general wrappers - PyWrappers
 site_dir: public
 site_description: "Documentation for the package"
 site_author: "@Jtachan"

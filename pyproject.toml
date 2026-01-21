@@ -1,11 +1,11 @@
 [project]
-name = "python-package-template"
+name = "pywrappers"
 authors = [
-    { name = "YOUR NAME HERE", email = "jgonzg@proton.me" },
+    { name = "Jaime Gonzalez Gomez", email = "jgonzg@proton.me" },
 ]
-description = "CHANGEME"
+description = "Collection of wrappers and decorators to be used in python development."
 dependencies = [
-    # add all dependencies of your package here
+    
 ]
 requires-python = ">=3.9"
 license = { text = "MIT license" }
@@ -15,10 +15,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "http://github/USERNAME/REPO.git"
-Documentation = "https://readthedocs.org"
+Homepage = "http://github/Jtachan/PyWrappers.git"
+# Documentation = "https://readthedocs.org"
 
-# you can add CLI tools which should be installed when installing the package
 # [project.scripts]
 # cli-command = "pkg_name.module:function"
 
@@ -30,7 +29,7 @@ requires = ["setuptools>=70.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.dynamic]
-version = { attr = "pkg_name._version.__version__" }
+version = { attr = "py_wraps._version.__version__" }
 readme = { file = ["README.md"], content-type = "text/markdown" }
 
 [tool.setuptools.packages.find]

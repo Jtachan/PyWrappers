@@ -1,6 +1,5 @@
 ![tests_badge](https://github.com/Jtachan/{REPO}/actions/workflows/unittests.yml/badge.svg)
 ![docs_badge](https://github.com/Jtachan/{REPO}/actions/workflows/docs.yml/badge.svg)
-![release_badge](https://github.com/Jtachan/{REPO}/actions/workflows/release.yml/badge.svg)
 
 # Python Repo Template
 
