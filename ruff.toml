@@ -39,6 +39,7 @@ select = [
 ignore = [
     "ANN002",   # missing type for *args
     "ANN003",   # missing type for **kwargs
+    "D205",     # Blank line after summary line
     "D401",     # first line in docstring as imperative mood
     "PLR6301",  # no-self-use
     "PLR0913",  # too-many-arguments
