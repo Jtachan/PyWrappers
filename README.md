@@ -1,9 +1,14 @@
-![tests_badge](https://github.com/Jtachan/{REPO}/actions/workflows/unittests.yml/badge.svg)
-![docs_badge](https://github.com/Jtachan/{REPO}/actions/workflows/docs.yml/badge.svg)
+![docs_badge](https://github.com/Jtachan/PyWrappers/actions/workflows/docs.yml/badge.svg)
 
-# Python Repo Template
+# PyWrappers
 
-Fill up with a repo description
+General wrappers and decorators to be used for debugging purposes.
+
+Right now, the package is only a set of algorithms that I tend to use in small debugging tasks.
+They don't require any heavy load for code or algorithm, but this way there is no need to always code them again.
+
+There is no planning about releasing it any soon to PyPI.
+If the package comes to be something, then I might consider it in the future.
 
 ## 📖 Documentation
 
@@ -22,11 +27,5 @@ You can find the documentation:
 
 The package is installable via pip:
 ````commandline
-pip install pkg
+pip install git+https://github.com/Jtachan/PyWrappers
 ````
-
-The 'develop' branch can also be installed to work with unreleased features:
-````commandline
-pip install git+https://github.com/Jtachan/{REPO}.git@develop
-````
-
