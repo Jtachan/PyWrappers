@@ -1,0 +1,56 @@
+name: Tests
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: 
+      - "main"
+      - "master"
+      - "develop"
+      - "devel"
+  pull_request:
+    branches: 
+      - "main"
+      - "master"
+      - "develop"
+      - "devel"
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    permission:
+      contents: read
+      id-token: write
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
+
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          pip install uv
+          uv pip install -r tests/requirements.txt
+      - name: Run tests
+        run: uv run -- pytest tests \
+                --cov=src \
+                --cov-report=xml:coverage.xml \
+                --cov-report=html:htmlcov \
+                --cov-fail-under=80  # Any set of tests that don't consider at least 80% of the src code will fail.
+
+      - name: Upload coverage artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-${{ matrix.os }}-py${{ matrix.python-version }}
+          path: |
+            coverage.xml
+            htmlcov/**
+          retention-days: 15
