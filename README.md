@@ -10,13 +10,6 @@ They don't require any heavy load for code or algorithm, but this way there is n
 There is no planning about releasing it any soon to PyPI.
 If the package comes to be something, then I might consider it in the future.
 
-## 📖 Documentation
-
-You can find the documentation:
-
-- Within the [`/docs`](docs/index.md) folder
-- At the mkdocs generated page(https://jtachan.github.io/REPO_NAME/) (official documentation)
-
 ## 🐍 Python Setup
 
 **Requirements**
