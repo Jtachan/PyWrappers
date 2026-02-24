@@ -1,4 +1,4 @@
-![docs_badge](https://github.com/Jtachan/PyWrappers/actions/workflows/docs.yml/badge.svg)
+[![Docs](https://img.shields.io/badge/Read_the_docs-blue)](https://jtachan.github.io/PyWrappers/)
 
 # PyWrappers
 
